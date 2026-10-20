@@ -1,0 +1,19 @@
+[project]
+name = "clinstat-agent"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=1.15.0",
+    "pandas>=3.0.6",
+    "pydantic>=2.14.1",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+clinstat-agent = "clinstat_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"

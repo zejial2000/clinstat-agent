@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+external/
+data/
+renv/library/
+.Rproj.user/
+.DS_Store

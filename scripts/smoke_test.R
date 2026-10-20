@@ -1,0 +1,5 @@
+library(haven); library(dplyr)
+adsl <- read_xpt("external/submissions-pilot1/adam/adsl.xpt")
+cat("N subjects:", nrow(adsl), "\n\n")
+print(count(adsl, TRT01P))
+print(count(adsl, SAFFL, ITTFL, EFFFL))
